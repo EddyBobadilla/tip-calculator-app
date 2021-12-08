@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Eddy Bobadilla | Tip Calculator App</title>
+  </head>
+  <body>
+    <img src="./logo.svg" alt="logo" class="logo" />
+    <div class="container main-padding">
+      <div class="bill-info main-margin">
+        <div>
+          <label for="">Bill</label>
+          <input
+            class="bill-input"
+            id="bill-input"
+            type="number"
+            placeholder="0.00"
+          />
+        </div>
+        <div>
+          <label for="">Select Tip %</label>
+          <div class="tip-percent">
+            <button class="tip">10%</button>
+            <button class="tip active-tip">15%</button>
+            <button class="tip">18%</button>
+            <button class="tip">25%</button>
+            <button class="tip">50%</button>
+            <input
+              class="custom-input"
+              id="custom-input"
+              type="number"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div>
+          <div class="people-info">
+            <label class="error" for="">Invalid value</label>
+            <label for="">People</label>
+          </div>
+          <input
+            class="people-input"
+            id="people-input"
+            type="number"
+            placeholder="1"
+          />
+        </div>
+      </div>
+      <div class="result">
+        <div class="result-info">
+          <div class="amount">
+            <div>
+              <label class="result-label" for="">Tip Amount</label>
+              <p>/ person</p>
+            </div>
+            <span class="dollar">$0.00</span>
+          </div>
+
+          <div class="portion">
+            <div>
+              <label class="result-label" for="">Portion</label>
+              <p>/ person</p>
+            </div>
+            <span class="dollar">$0.00</span>
+          </div>
+
+          <div class="total">
+            <div>
+              <label class="result-label" for="">Total</label>
+              <p>check</p>
+            </div>
+            <span class="dollar">$0.00</span>
+          </div>
+        </div>
+        <button class="reset-button">Reset</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
